@@ -1,0 +1,14 @@
+# Loai tru cac thu muc bien dich va tam thoi
+bin/
+obj/
+artifacts/
+publish/
+
+# Loai tru file cau hinh nguoi dung va file tam thoi
+*.user
+*.suo
+*.bak
+.vs/
+*.pdb
+TestResults/
+
