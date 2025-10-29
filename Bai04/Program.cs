@@ -30,9 +30,10 @@ public class Program
         PhanSo ps2 = new PhanSo();
         ps2.Nhap();
         Console.Write("\nTong 2 phan so: "); (ps1 + ps2).Xuat();
-        Console.Write("Hieu 2 phan so: "); (ps1 - ps2).Xuat();
-        Console.Write("Tich 2 phan so: "); (ps1 * ps2).Xuat();
-        Console.Write("Thuong 2 phan so: "); (ps1 / ps2).Xuat();
+        Console.Write("\nHieu 2 phan so: "); (ps1 - ps2).Xuat();
+        Console.Write("\nTich 2 phan so: "); (ps1 * ps2).Xuat();
+        Console.Write("\nThuong 2 phan so: "); (ps1 / ps2).Xuat();
+        Console.WriteLine();
     }
 
     static void P2()

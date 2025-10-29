@@ -39,7 +39,6 @@ public class PhanSo
             }
             return a;
         }
-
         public static int NhapSo()
         {
             string input = Console.ReadLine();

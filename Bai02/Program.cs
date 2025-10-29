@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Nhap duong dan thu muc (vi du: D:\\): ");
+        Console.Write("Nhap duong dan thu muc: ");
         string path = Console.ReadLine() ?? "";
 
         if (Directory.Exists(path))
