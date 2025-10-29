@@ -48,9 +48,9 @@ public class Program
             arr[i].Nhap();
         }
         PhanSo max = MaxPS(arr, n);
-        Console.WriteLine("\nPhan so lon nhat: ");
+        Console.Write("\nPhan so lon nhat: ");
         max.Xuat();
-        Console.WriteLine("\nMang sau khi sap xep tang dan: ");
+        Console.Write("\nMang sau khi sap xep tang dan: ");
         SortPS(arr, n);
         for (int i = 0; i < n; i++)
         {
