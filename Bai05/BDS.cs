@@ -30,15 +30,30 @@ public abstract class BDS
 
     public double NhapSoDouble()
     {
-        if(double.TryParse(Console.ReadLine(), out double so))
+        double so;
+        string input = Console.ReadLine();
+
+        if (double.TryParse(input, out so))
         {
+            if (so < 0)
+            {
+                Console.Write("Gia tri khong the am.");
+                Environment.Exit(0);
+            }
+
+            if (so == 0)
+            {
+                Console.Write("Gia tri phai lon hon 0.");
+                Environment.Exit(0);
+            }
             return so;
         }
         else
         {
-            Console.Write("Nhap sai! Vui long nhap lai: ");
-            return NhapSoDouble();
+            Console.Write("Nhap sai (Nhap so khong am)");
+            Environment.Exit(0);
         }
+        return so;
     }
 
     public static int NhapSo()
