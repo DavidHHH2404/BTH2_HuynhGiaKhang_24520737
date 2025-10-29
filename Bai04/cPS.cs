@@ -79,7 +79,7 @@ public class PhanSo
         {
             if (mauSo == 1)
             {
-                Console.WriteLine(tuSo);
+                Console.Write(tuSo);
                 return;
             }
             Console.Write($"{tuSo}/{mauSo}");
