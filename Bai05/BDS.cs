@@ -116,7 +116,7 @@ public class ChungCu : BDS
     {
         Console.WriteLine("Nhap thong tin chung cu:");
         base.Nhap();
-        Console.WriteLine("Sso tang:");
+        Console.Write("So tang:");
         soTang = NhapSo();
     }
 

@@ -59,18 +59,25 @@ public class Program
     static void XuatCoDK(BDS[] arr)
     {
         Console.WriteLine("Danh sach bds theo dieu kien\n");
-        foreach(BDS bds in arr)
+        bool found = false;
+        foreach (BDS bds in arr)
         {
             if (bds.GetType() == typeof(KhuDat) && bds.GetDienTich() > 100.0)
             {
                 bds.Xuat();
                 Console.WriteLine();
+                found = true;
             }
             if (bds is NhaPho nhaPho && bds.GetDienTich() > 60.0 && nhaPho.getNamXayDung() >= 2019)
             {
                 nhaPho.Xuat();
                 Console.WriteLine();
+                found = true;
             }
+        }
+        if (!found)
+        {
+            Console.WriteLine("Khong co bds nao thoa dieu kien\n");
         }
     }
 
@@ -82,7 +89,7 @@ public class Program
         Console.Write("Dien tich: "); double _dienTich = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("\nDanh sach cac bds tuong ung\n");
-
+        bool found = false;
         foreach(BDS bds in arr)
         {
             if (bds.GetDiaDiem().ToLower() ==  _diaDiem.ToLower() &&
@@ -90,7 +97,12 @@ public class Program
             {
                 bds.Xuat();
                 Console.WriteLine();
+                found = true;
             }
+        }
+        if (!found)
+        {
+            Console.WriteLine("Khong tim thay bds nao tuong ung");
         }
     }
     static int NhapSo()
